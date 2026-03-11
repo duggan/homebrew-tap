@@ -5,21 +5,21 @@
 class Tweetembed < Formula
   desc "Turn tweets from a Twitter archive into standalone embeddable HTML"
   homepage "https://github.com/duggan/tweetembed"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/duggan/tweetembed/releases/download/v0.1.0/tweetembed_0.1.0_darwin_amd64.tar.gz"
-      sha256 "f559351131088f77fbd5774bdf48e33d49b8723434d7072b3f4889a64841df59"
+      url "https://github.com/duggan/tweetembed/releases/download/v0.2.0/tweetembed_0.2.0_darwin_amd64.tar.gz"
+      sha256 "986ba9185737c8bcfb0f5508bb3dbd4cf2ec736248f0b093970111b41ffcaea5"
 
       define_method(:install) do
         bin.install "tweetembed"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/duggan/tweetembed/releases/download/v0.1.0/tweetembed_0.1.0_darwin_arm64.tar.gz"
-      sha256 "4531db1d718333aef769d336b1a4f2227d9e04f5b3701200cdb3c114c7257df4"
+      url "https://github.com/duggan/tweetembed/releases/download/v0.2.0/tweetembed_0.2.0_darwin_arm64.tar.gz"
+      sha256 "78afacb72363ef31c25ae3d031467ff8efdbe345dcd73652d38c07f090336a90"
 
       define_method(:install) do
         bin.install "tweetembed"
@@ -29,15 +29,15 @@ class Tweetembed < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/duggan/tweetembed/releases/download/v0.1.0/tweetembed_0.1.0_linux_amd64.tar.gz"
-      sha256 "20c5513f12bca7e58f94c6257b6413b52cd67ae2694bea307cd48ab270ceef43"
+      url "https://github.com/duggan/tweetembed/releases/download/v0.2.0/tweetembed_0.2.0_linux_amd64.tar.gz"
+      sha256 "f8ca181d3d2768c8514f8a42f068a7aec931896948d0d1e3943246523efea453"
       define_method(:install) do
         bin.install "tweetembed"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/duggan/tweetembed/releases/download/v0.1.0/tweetembed_0.1.0_linux_arm64.tar.gz"
-      sha256 "c3d035a223df4a2fd41075d49590a7a62e7a45589cec402f14eb12bdab04e9c8"
+      url "https://github.com/duggan/tweetembed/releases/download/v0.2.0/tweetembed_0.2.0_linux_arm64.tar.gz"
+      sha256 "8766e3a911c6f88376786500e78b493257b8c9f9e566b6ae796210229e4f8c8c"
       define_method(:install) do
         bin.install "tweetembed"
       end

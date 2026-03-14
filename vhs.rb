@@ -11,7 +11,7 @@ class Vhs < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/duggan/vhs/releases/download/v0.11.0-videoopts/vhs_0.11.0-videoopts_darwin_amd64.tar.gz"
-      sha256 "9083dc8149844d4bb964173cb3da48bd1e43fba76c7b2826e2cac356ed68c2ab"
+      sha256 "044bc6596425cf96865951f2cc2435aa41636ea2e65ba96303e7b0d5ebd12aa4"
 
       define_method(:install) do
         bin.install "vhs"
@@ -19,7 +19,7 @@ class Vhs < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/duggan/vhs/releases/download/v0.11.0-videoopts/vhs_0.11.0-videoopts_darwin_arm64.tar.gz"
-      sha256 "274d2eb5c3d8c99e3e25056c41ab3f2af2c677849f07ac1150c0fc103596efe6"
+      sha256 "859eb69947dc40e6adb6d070006040a09d4ff4e7044eeec85c7bf09932439ed4"
 
       define_method(:install) do
         bin.install "vhs"
@@ -30,14 +30,14 @@ class Vhs < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/duggan/vhs/releases/download/v0.11.0-videoopts/vhs_0.11.0-videoopts_linux_amd64.tar.gz"
-      sha256 "ceb75d2e35cac8c999657484a7603cfb699b26f4a591e37778327e7592a9c2a3"
+      sha256 "7a32e6684b8bc32b9d6029ffb3275b901325592319b158b38ff439ead5884fba"
       define_method(:install) do
         bin.install "vhs"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/duggan/vhs/releases/download/v0.11.0-videoopts/vhs_0.11.0-videoopts_linux_arm64.tar.gz"
-      sha256 "063e28eb682839572452413400d6046dce865ae46701e131edec3fb9d299fd66"
+      sha256 "94266475dd3fdbf57327b163c3dfc3af53a4e154455111e08db817380170ec5b"
       define_method(:install) do
         bin.install "vhs"
       end
